@@ -2,7 +2,7 @@ console.log('Client side js is loaded');
 
 function fetchWeatherData() {
     document.querySelector('#result').innerHTML = 'Loading...';
-    fetch('http://localhost:3001/weather?address='+document.querySelector('#address').value)
+    fetch('/weather?address='+document.querySelector('#address').value)
      .then(resp => {
          resp.json().then(data => {
             if (data.err) {
