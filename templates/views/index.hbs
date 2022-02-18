@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <input id='address' type='string' placeholder="Address">
+        <button onclick='fetchWeatherData()'>Submit</button>
+        <pre id="result" style="margin-top: 10px; font-size: 16px;"></pre>
+    </div>
+    <script defer src="/js/app.js"></script>
+
+    {{>footer}}
+</body>
+
+</html>
